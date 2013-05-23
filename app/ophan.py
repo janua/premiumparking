@@ -17,7 +17,7 @@ def getTop20ArticlesThroughContentAPI():
     for article in getTop20Articles():
         #26 is http://www.guardian.co.uk/
         contentApiItem = contentapi.getArticle(article['url'][26:])     
-        results.append(contentApiItem)
+        results.append(contentApiItem['response']['content'])
 
     return results
 
