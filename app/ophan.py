@@ -9,7 +9,7 @@ DEFAULT_PARAMS = {
     "count" : 20,
     }
 
-def getCurrentArticles():
+def getTop20Articles():
     return getOphanUrl(MOST_READ_URL)
 
 def getOphanUrl(url, params=DEFAULT_PARAMS):
