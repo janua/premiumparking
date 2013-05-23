@@ -12,8 +12,8 @@
         <header>
             <h2>Top 20 Articles</h2>
             {% for article in articles %}
-                <p>{{ article.url }}</p>
-                <p>{{ article.count }} Hits</p>
+                <p>{{ article.webTitle}}</p>
+                <p>{{ article.ophan_count }} Hits</p>
             {% endfor %}
         </header>
     </section>

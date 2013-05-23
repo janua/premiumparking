@@ -8,7 +8,7 @@ STATE = dict()
 
 @app.route("/")
 def index():
-    return render_template('index.html', articles=ophan.getTop20Articles())
+    return render_template('index.html', articles=ophan.getTop20ArticlesThroughContentAPI())
 
 @app.route("/sandbox")
 def sandbox():
