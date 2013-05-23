@@ -1,3 +1,4 @@
+import ophan
 from flask import Flask
 from flask import render_template, jsonify
 app = Flask(__name__)
@@ -10,7 +11,7 @@ def index():
 
 @app.route("/state")
 def state():
-	return jsonify(STATE)
+	return jsonify(ophan.getCurrentArticles())
 
 if __name__ == "__main__":
     app.debug = True
