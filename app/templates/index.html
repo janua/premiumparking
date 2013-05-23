@@ -1,21 +1,50 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta name="author" content="Francis Carr" />
+    <meta name="author" content="Haran Rasalingam" />
+
+    <title>GRAP</title>
+
+
+    <link href="static/grap.css" rel="stylesheet" />
     <link href="static/style.css" rel="stylesheet" />
     <script src="static/script.js"></script>
     <script src="http://js.pusher.com/2.0/pusher.min.js"></script>
-</head>
 
+
+</head>
 <body>
-    <h1>Premium Parking</h1>
-    <p>Premium parking app</p>
-    <section id="top20">
-        <header>
-            <h2>Top 20 Articles</h2>
-            {% for article in articles %}
-                <p>{{ article.webTitle}}</p>
-                <p>{{ article.ophan_count }} Hits</p>
-            {% endfor %}
-        </header>
-    </section>
+<div id="container">
+
+    <div class="boxA"><img src="static/grap.png" /></div>
+    <div class="boxB">
+        <div id="new" class="box1 new">
+            <p class="new">New Articles</p>
+            <ul>
+                {% for article in articles[:10] %}
+                <li>{{ article.webTitle}} | {{ article.ophan_count }} Hits</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="box2">
+            <div id="potential" class="box2a potential">
+                <p class="potential">Potential Articles</p>
+                <ul>
+                     {% for article in articles[10:] %}
+                <li>{{ article.webTitle}} | {{ article.ophan_count }} Hits</li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="chart" class="box2b"><iframe id="chart" src="static/chart.html"></iframe></div>
+        </div>
+        <div id="feed" class="box3 feed">
+            <p class="feed">Feed</p>
+            <img src="static/feed.png" /></div>
+    </div>
+
+</div>
 </body>
 </html>

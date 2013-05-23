@@ -1,0 +1,114 @@
+body {
+	margin: 0 0 0 0;
+}
+#container {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    margin-left: 0%;
+    border: 1px dotted #333;
+    padding: 0;
+    font-family: Arial;
+}
+.boxA {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    background: white;
+    margin: 0 0 0 0;
+}
+.boxB {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 700px;
+    background: white;
+    margin: 0 0 0 0;
+}
+.box1 {
+    position: relative;
+    float: left;
+    width: 23%;
+    height: 100%;
+    margin-right: 2%;
+    color: white;
+    background: black;
+    border-top: 2px solid red;
+}
+.box2 {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: white;
+    margin: 0;
+}
+.box2a {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 48%;
+    color: white;
+    background: black;
+    margin-bottom: 1%;
+    border-top: 2px solid blue;
+}
+.box2b {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 48%;
+    background: black;
+    margin-top: 2%;
+}
+.box3 {
+    position: relative;
+    float: left;
+    width: 23%;
+    height: 100%;
+    background: black;
+    margin-left: 2%;
+    border-top: 2px solid green;
+}
+.tone1, .tone2	{
+	font-family: "Times New Roman";
+	font-size: 75px;
+}
+.tone1	{
+	color: #6666ff;
+}
+.tone2	{
+	color: #0000ff;
+}
+#chart	{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+p  {
+    color: black;
+    padding: 5px;
+    margin: 0 40% 0 5px;
+}
+p.new    {
+    background-color: red;
+}
+p.potential  {
+    background-color: blue;
+}
+p.feed  {
+    background-color: green;
+}
+ul {
+	padding: 0 5px 0 5px;
+	list-style:none;
+	font-size: 12px;
+	height: 100%;
+}
+#new li     {
+    border-left: 2px solid red;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+}
