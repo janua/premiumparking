@@ -8,5 +8,14 @@
 <body>
     <h1>Premium Parking</h1>
     <p>Premium parking app</p>
+    <section id="top20">
+        <header>
+            <h2>Top 20 Articles</h2>
+            {% for article in articles %}
+                <p>{{ article.url }}</p>
+                <p>{{ article.count }} Hits</p>
+            {% endfor %}
+        </header>
+    </section>
 </body>
 </html>
