@@ -1,0 +1,10 @@
+Have virtualenv and pip installed globally
+
+Then after clone run:
+
+virtualenv .
+source bin/activate
+pip install -r requirements.txt
+
+Run with:
+python app/main.py
