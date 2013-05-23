@@ -12,7 +12,7 @@ def index():
 
 @app.route("/sandbox")
 def sandbox():
-    return jsonify(contentapi.getArticle("/fashion/2013/may/18/outnet-md-tips-summer-wardrobe"))
+    return jsonify({'data:':ophan.getTop20ArticlesThroughContentAPI()})
     #return str(ophan.getOphanUrl("http://api.ophan.co.uk/viral"))
 	#return jsonify({'data': ophan.getTop20Articles()})
 
