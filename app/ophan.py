@@ -2,6 +2,8 @@ import requests
 import json
 import contentapi
 
+OPHAN_CACHE = dict()
+
 MOST_READ_URL = "http://api.ophan.co.uk/api/mostread"
 
 DEFAULT_PARAMS = {
@@ -24,11 +26,18 @@ def getTop20Articles():
     return getOphanUrl(MOST_READ_URL)
 
 def getOphanUrl(url, params=DEFAULT_PARAMS):
+    try:
+        #Doesn't include the params as cache key
+        return OPHAN_CACHE[url]
+    except:
+        print 'Ophan cache miss'
+
     response = requests.get(url, params=params)
     results = list()
 
     try:
         results = json.loads(response.content)
+        OPHAN_CACHE[url] = results
     except Exception as e:
         print "Error: " + str(e)
 

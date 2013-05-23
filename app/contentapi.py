@@ -16,7 +16,7 @@ def getArticle(articleId, params=DEFAULT_PARAMS):
     try:
         return CONTENT_API_CACHE[articleId]
     except:
-        print "Not in cache" 
+        print "ContentApi cache miss" 
 
     result = dict()
 
