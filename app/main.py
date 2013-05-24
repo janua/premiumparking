@@ -12,7 +12,7 @@ def index():
 
 @app.route("/article/<path:article_id>")
 def article(article_id):
-    return render_template('article.html', article=contentapi.getArticle(article_id)) 
+    return render_template('article.html', article=contentapi.getArticle(article_id)['response']['content']) 
 
 @app.route("/sandbox")
 def sandbox():
