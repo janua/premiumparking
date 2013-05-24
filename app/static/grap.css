@@ -1,83 +1,49 @@
 body {
 	margin: 0;
-}
-
-#container1 {
-    position: absolute;
-    width: 100%;
-    left: 0%;
-    margin-left: 0%;
-    border: 1px dotted #333;
-    padding: 0;
-    font-family: Arial;
-}
-
-#container2 {
-    position: relative;
-    float: left;
-    width: 50%;
-    height: 100%;
-    background: white;
-    margin: 0;
+    padding: 20px;
+    background-color: #424242;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 12px;
 }
 
 #header {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 100px;
-    background: white;
-    margin: 0 0 0 0;
+    margin-bottom: 20px;
 }
 
-#main {
-    position: relative;
+#content {
     float: left;
-    width: 100%;
-    height: 700px;
-    background: white;
-    margin: 0 0 0 0;
+    width: 50%;
+    height: 100%;
+    margin: 0;
 }
-#new {
-    position: relative;
+
+#sidebar-left {
     float: left;
     width: 23%;
     height: 100%;
     margin-right: 2%;
-    color: white;
-    background: black;
-    border-top: 2px solid red;
     overflow: auto;
 }
 
 #potential {
-    position: relative;
     float: left;
     width: 100%;
     height: 48%;
-    color: white;
-    background: black;
     margin-bottom: 1%;
-    border-top: 2px solid blue;
     overflow: auto;
 }
 #chart {
-    position: relative;
     float: left;
     width: 100%;
     height: 48%;
-    background: black;
     margin-top: 2%;
 }
-#feed {
-    position: relative;
+#sidebar-right {
     float: left;
     width: 23%;
     height: 100%;
-    color: white;
-    background: black;
     margin-left: 2%;
-    border-top: 2px solid green;
 }
 
 #chart iframe	{
@@ -86,18 +52,8 @@ body {
 	overflow: hidden;
 }
 p  {
-    color: black;
     padding: 5px;
     margin: 0 40% 0 5px;
-}
-#new p   {
-    background-color: red;
-}
-#potential p  {
-    background-color: blue;
-}
-#feed p  {
-    background-color: green;
 }
 ul {
 	padding: 0 5px 0 5px;
@@ -105,31 +61,31 @@ ul {
 	font-size: 12px;
 	height: 100%;
 }
-#new li     {
-    border-left: 2px solid red;
+#sidebar-left li     {
+    border-left: 2px solid #cccccc;
     height: 50px;
     margin: 10px;
     padding: 5px;
 }
 #potential li     {
-    border-left: 2px solid blue;
+    border-left: 2px solid #cccccc;
     height: 25px;
     margin: 5px;
     padding: 5px;
 }
-#feed li     {
-    border-left: 2px solid green;
+#sidebar-right li     {
+    border-left: 2px solid #cccccc;
     height: 50px;
     margin: 10px;
     padding: 5px;
 }
-#feed company   {
+#sidebar-right company   {
     font-weight: bold;
 }
-#feed articleTitle  {
+#sidebar-right articleTitle  {
     font-style: italic;
 }
-#feed time  {
+#sidebar-right time  {
     display: block;
     color: gray;
     font-size: 8px;
@@ -145,3 +101,38 @@ ul {
     width: 100px;
     background-color: gray;
 }
+
+
+.title-bar {
+    border-top: 2px solid #cccccc;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.title-bar-text {
+    padding: 4px 60px 4px 10px;
+    display: inline-block;
+    margin-left: 5px;
+    background-color: #cccccc;
+    border-radius: 0 0 3px 3px;
+    color: #000000;
+}
+
+.box {
+    background-color: #2d2d2d;
+}
+
+
+/* these need to come last */
+.pink-bg { background-color: #ff2f92; }
+.pink-border { border-color: #ff2f92; }
+
+.blue-bg { background-color: #0096ff; }
+.blue-border { border-color: #0096ff; }
+
+.orange-bg { background-color: #ff9300; }
+.orange-border { border-color: #ff9300; }
+
+.green-bg { background-color: #73fa79; }
+.green-border { border-color: #73fa79; }
