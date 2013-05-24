@@ -74,6 +74,7 @@ body {
     float: left;
     width: 23%;
     height: 100%;
+    color: white;
     background: black;
     margin-left: 2%;
     border-top: 2px solid green;
@@ -115,6 +116,23 @@ ul {
     height: 25px;
     margin: 5px;
     padding: 5px;
+}
+#feed li     {
+    border-left: 2px solid green;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+}
+#feed company   {
+    font-weight: bold;
+}
+#feed articleTitle  {
+    font-style: italic;
+}
+#feed time  {
+    display: block;
+    color: gray;
+    font-size: 8px;
 }
 .onward-journeys-total    {
     height: 3px;
