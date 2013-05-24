@@ -9,7 +9,8 @@ CONTENT_API_CACHE = dict()
 
 DEFAULT_PARAMS = {
     'api-key': API_KEY,
-    'format': 'json'
+    'format': 'json',
+    'show-fields': 'all'
 }
 
 def getArticle(articleId, params=DEFAULT_PARAMS):
