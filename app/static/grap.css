@@ -61,24 +61,19 @@ ul {
 	font-size: 12px;
 	height: 100%;
 }
-#sidebar-left li     {
+
+.bordered-list li {
     border-left: 2px solid #cccccc;
     height: 50px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 5px;
 }
-#potential li     {
-    border-left: 2px solid #cccccc;
+
+.bordered-list-short li {
     height: 25px;
-    margin: 5px;
-    padding: 5px;
+    margin: 5px 0;
 }
-#sidebar-right li     {
-    border-left: 2px solid #cccccc;
-    height: 50px;
-    margin: 10px;
-    padding: 5px;
-}
+
 #sidebar-right company   {
     font-weight: bold;
 }
@@ -123,6 +118,52 @@ ul {
     background-color: #2d2d2d;
 }
 
+.inner {
+    padding: 10px;
+}
+
+.box-dark {
+    background-color: #202020
+}
+
+.tabs {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.tabs li {
+    float: left;
+    cursor: pointer;
+    background-color: #262626;
+    padding: 10px 20px;
+    margin-right: 5px;
+    color: #929292;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+}
+
+li.tabs-selected,
+.tabs li:hover {
+    background-color: #202020;
+    cursor: pointer;
+}
+
+.tabs li:last-child {
+    margin-right: 0;
+}
+
+.tab-item-right {
+    float: right !important;
+    font-weight: bold;
+}
+
+.tab-pane {
+    overflow: hidden;
+    padding: 0 10px;
+}
 
 /* these need to come last */
 .pink-bg { background-color: #ff2f92; }
@@ -136,3 +177,4 @@ ul {
 
 .green-bg { background-color: #73fa79; }
 .green-border { border-color: #73fa79; }
+
