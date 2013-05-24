@@ -50,7 +50,7 @@
                 <div class="tab-pane box-dark">
                     <ul class="bordered-list pink-border">
                         {% for article in articles[:10] %}
-                        <li>{{ article.webTitle}} | {{ article.ophan_count }} Hits <div class="onward-journeys-total"><div class="onward-journeys-portion"></div></div></li>
+                        <li><a href="/article/{{article.id}}">{{ article.webTitle}}</a> | {{ article.ophan_count }} Hits <div class="onward-journeys-total"><div class="onward-journeys-portion"></div></div></li>
                         {% endfor %}
                     </ul>
                 </div>
