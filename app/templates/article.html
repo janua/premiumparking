@@ -11,16 +11,52 @@
 
     <title>GRAP</title>
 
-    <link href="static/grap.css" rel="stylesheet" />
-    <link href="static/style.css" rel="stylesheet" />
-    <script src="static/script.js"></script>
+    <link href="/static/grap.css" rel="stylesheet" />
+    <link href="/static/style.css" rel="stylesheet" />
+    <script src="/static/script.js"></script>
 
 </head>
 <body>
-<div id="container1">
+<div id="container">
 
-    <div id="header"><!--<img src="static/grap.png" />--></div>
+    <div id="header"><img src="/static/grap-logo.png" /></div>
     <div id="main">
+        <div id="sidebar-left" class="box">
+            <h2 class="title-bar pink-border"><span class="title-bar-text pink-bg">Article</span></h2>
+
+            <header class="article-pane">
+                <h3>{{ article.webTitle }}</h3>
+                <span class="buy">Bid</span>
+                <aside class="buy">Available for £100 per 749,000 impressions</aside>
+            </header>
+            
+            <div class="inner">
+                <ol class="tabs">
+                    <li class="tabs-selected">Article Info</li>
+                    <li>History</li>
+                </ol>
+                <div class="tab-pane box-dark">
+                    <ul class="article-info">
+                        <li>
+                            <aside>Author(s)</aside>
+                            <p>Someone</p>
+                        </li>
+                        <li>
+                            <aside>Standfirst</aside>
+                            <p>Standfirst</p>
+                        </li>
+                        <li>
+                            <aside>Tags</aside>
+                            <p>Apple, Samsung</p>
+                        </li>
+                        <li>
+                            <aside>No. Comments</aside>
+                            <p>472</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <p>{{ article }}</p> 
     </div>
 
