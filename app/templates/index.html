@@ -3,8 +3,11 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta name="author" content="Troy Harris" />
     <meta name="author" content="Francis Carr" />
     <meta name="author" content="Haran Rasalingam" />
+    <meta name="author" content="Lee Simpson" />
+    <meta name="author" content="Matt Andrews" />
 
     <title>GRAP</title>
 
@@ -17,32 +20,33 @@
 
 </head>
 <body>
-<div id="container">
+<div id="container1">
 
-    <div class="boxA"><img src="static/grap.png" /></div>
-    <div class="boxB">
-        <div id="new" class="box1 new">
-            <p class="new">New Articles</p>
+    <div id="header"><!--<img src="static/grap.png" />--></div>
+    <div id="main">
+        <div id="new">
+            <p>New Articles</p>
             <ul>
                 {% for article in articles[:10] %}
-                <li>{{ article.webTitle}} | {{ article.ophan_count }} Hits</li>
+                <li>{{ article.webTitle}} | {{ article.ophan_count }} Hits <div class="onward-journeys-total"><div class="onward-journeys-portion"></div></div></li>
                 {% endfor %}
             </ul>
         </div>
-        <div class="box2">
-            <div id="potential" class="box2a potential">
-                <p class="potential">Potential Articles</p>
+        <div id="container2">
+            <div id="potential">
+                <p>Potential Articles</p>
                 <ul>
-                     {% for article in articles[10:] %}
-                <li>{{ article.webTitle}} | {{ article.ophan_count }} Hits</li>
-                {% endfor %}
+                    {% for article in articles[10:] %}
+                    <li>{{ article.webTitle}} | {{ article.ophan_count }} Hits <div class="onward-journeys-total"><div class="onward-journeys-portion"></div></div></li>
+                    {% endfor %}
                 </ul>
             </div>
-            <div id="chart" class="box2b"><iframe id="chart" src="static/chart.html"></iframe></div>
+            <div id="chart"><iframe src="static/chart.html"></iframe></div>
         </div>
-        <div id="feed" class="box3 feed">
-            <p class="feed">Feed</p>
-            <img src="static/feed.png" /></div>
+        <div id="feed">
+            <p>Feed</p>
+            <img src="static/feed.png" />
+        </div>
     </div>
 
 </div>
