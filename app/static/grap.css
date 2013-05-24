@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-    padding: 20px;
+    padding: 1.5%;
     background-color: #424242;
     color: #ffffff;
     font-family: arial;
@@ -64,13 +64,11 @@ ul {
 
 .bordered-list li {
     border-left: 2px solid #cccccc;
-    height: 50px;
     margin: 10px 0;
     padding: 5px;
 }
 
 .bordered-list-short li {
-    height: 25px;
     margin: 5px 0;
 }
 
@@ -138,8 +136,8 @@ ul {
     float: left;
     cursor: pointer;
     background-color: #262626;
-    padding: 10px 20px;
-    margin-right: 5px;
+    padding: 3% 6%;
+    margin-right: 2%;
     color: #929292;
     border-radius: 3px 3px 0 0;
     cursor: pointer;
