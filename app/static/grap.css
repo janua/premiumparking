@@ -166,15 +166,17 @@ li.tabs-selected,
 }
 
 /* these need to come last */
+/* you will never be able to override the border ones, sorry */
+
 .pink-bg { background-color: #ff2f92; }
-.pink-border { border-color: #ff2f92; }
+.pink-border, .pink-border > * { border-color: #ff2f92 !important; } 
 
 .blue-bg { background-color: #0096ff; }
-.blue-border { border-color: #0096ff; }
+.blue-border, .blue-border > * { border-color: #0096ff !important; }
 
 .orange-bg { background-color: #ff9300; }
-.orange-border { border-color: #ff9300; }
+.orange-border, .orange-border > * { border-color: #ff9300 !important; }
 
 .green-bg { background-color: #73fa79; }
-.green-border { border-color: #73fa79; }
+.green-border, .green-border > * { border-color: #73fa79 !important; }
 
