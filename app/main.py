@@ -10,6 +10,10 @@ STATE = dict()
 def index():
     return render_template('index.html', articles=ophan.getTop20ArticlesThroughContentAPI())
 
+@app.route("/article/<path:article_id>")
+def article(article_id):
+    return render_template('article.html', article=contentapi.getArticle(article_id)) 
+
 @app.route("/sandbox")
 def sandbox():
     return jsonify({'data:':ophan.getTop20ArticlesThroughContentAPI()})
